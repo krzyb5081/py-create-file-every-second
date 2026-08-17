@@ -5,7 +5,7 @@ from time import sleep
 def main() -> None:
     while True:
         now = datetime.now()
-        filename = f"app-{now.hour()}_{now.minute()}_{now.second()}.log"
+        filename = f"app-{now.hour}_{now.minute}_{now.second}.log"
         timestamp = now.strftime("%m/%d/%Y %H:%M:%S")
 
         print(timestamp + " " + filename)
